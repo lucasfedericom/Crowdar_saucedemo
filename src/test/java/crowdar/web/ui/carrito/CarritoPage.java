@@ -11,8 +11,15 @@ public class CarritoPage extends PageObject {
     @FindBy(xpath = "//div[@class='cart_item']")
     List<WebElementFacade> listaDeItems;
 
+    @FindBy(xpath = "//button[@id='checkout']")
+    WebElementFacade buttonCheckout;
+
     public List<WebElementFacade> getlistaDeItems(){
         return listaDeItems;
+    }
+
+    public WebElementFacade getButtonCheckout(){
+        return buttonCheckout;
     }
 
 }

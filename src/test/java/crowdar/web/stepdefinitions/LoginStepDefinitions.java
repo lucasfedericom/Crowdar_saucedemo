@@ -22,7 +22,7 @@ public class LoginStepDefinitions {
     }
 
     @Then("se visualiza correctamente el sitio de inventario de Saucedemo")
-    public void se_visualiza_correctamente_el_sitio_de_inventario_de_saucedemo() {
+    public void seVizualizaCorrectamenteElSiteDeInventario() {
         assertThat("Products").isEqualToIgnoringCase(loginSteps.getTituloProducts());
     }
 
